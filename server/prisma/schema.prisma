@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// Usuário autenticado da aplicação.
+// Cada usuário possui suas próprias tarefas, garantindo isolamento dos dados.
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String
+  tasks     Task[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// Tarefa vinculada a um usuário no OnPlan Work.
+// Suporta status, prioridades, categorias, prazos, notas e subtarefas.
+model Task {
+  id          Int       @id @default(autoincrement())
+  title       String
+  done        Boolean   @default(false)
+  position    Int       @default(0)
+  priority    String    @default("MEDIUM")
+  category    String    @default("Geral")
+  dueDate     DateTime?
+  description String?
+  subtasks    String?   @default("[]")
+  userId      Int
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}

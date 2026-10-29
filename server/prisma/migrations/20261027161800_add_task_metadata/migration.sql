@@ -1,0 +1,6 @@
+-- AlterTable
+ALTER TABLE "Task" ADD COLUMN "priority" TEXT NOT NULL DEFAULT 'MEDIUM',
+ADD COLUMN "category" TEXT NOT NULL DEFAULT 'Geral',
+ADD COLUMN "dueDate" TIMESTAMP(3),
+ADD COLUMN "description" TEXT,
+ADD COLUMN "subtasks" TEXT DEFAULT '[]';
