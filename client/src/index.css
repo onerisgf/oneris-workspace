@@ -80,6 +80,7 @@
 
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -88,28 +89,39 @@ html {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   transition: background-color var(--transition-normal), color var(--transition-normal);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
   margin: 0;
+  width: 100%;
   min-width: 320px;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-family: var(--font-main);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
+/* Arquitetura Mobile First: 100% fluido em celulares, contido e com borda em telas grandes */
 #root {
-  width: 1180px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  border-inline: 1px solid var(--border-color);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
   background-color: var(--bg-primary);
   transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+
+@media (min-width: 1200px) {
+  #root {
+    width: 1180px;
+    border-inline: 1px solid var(--border-color);
+  }
 }
 
 button, input, textarea, select {
@@ -118,8 +130,8 @@ button, input, textarea, select {
 
 /* Scrollbar estilizada */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {

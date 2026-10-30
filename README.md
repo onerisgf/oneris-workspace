@@ -25,7 +25,7 @@ O **OnPlan Work** é uma aplicação Full Stack projetada para transformar a rot
 - **Busca em Tempo Real e Filtros:** Localize qualquer item instantaneamente por título, categoria ou notas, com filtros combinados.
 - **Dark Mode & Light Mode:** Suporte completo a tema escuro e claro, com alternância instantânea e persistência no navegador.
 - **Formulário de Contato:** Integração de envio de mensagens com Nodemailer.
-- **Interface Responsiva & Acessível:** Layout fluido adaptável a dispositivos móveis, tablets e desktops.
+- **Arquitetura Mobile-First:** Desenvolvido nativamente com foco em dispositivos móveis (smartphones), alvos de toque otimizados, ausência de overflow horizontal e adaptação fluida para tablets e desktops.
 
 ---
 
@@ -35,7 +35,7 @@ O **OnPlan Work** é uma aplicação Full Stack projetada para transformar a rot
 - **React 19**
 - **Vite**
 - **JavaScript (ES Modules)**
-- **CSS3 Moderno** (design tokens, variáveis de tema e animações)
+- **CSS3 Moderno Mobile-First** (design tokens, variáveis de tema, media queries progressivas e animações)
 - **React Router DOM** (roteamento declarativo e rotas protegidas)
 - **DnD Kit** (`@dnd-kit/core`, `@dnd-kit/sortable`, `@dnd-kit/utilities`)
 
