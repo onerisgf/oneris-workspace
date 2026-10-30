@@ -1,6 +1,20 @@
-# OnPlan Work
+# OnPlan Work — Gestão Ágil de Tarefas & Produtividade Pessoal
 
-> Plataforma moderna de gestão ágil de tarefas, produtividade pessoal e acompanhamento de métricas em tempo real.
+[![React](https://img.shields.io/badge/React-19-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![Database](https://img.shields.io/badge/Database-PostgreSQL%20(Neon)-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://neon.tech/)
+[![ORM](https://img.shields.io/badge/ORM-Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)](https://www.prisma.io/)
+[![Design](https://img.shields.io/badge/Design-Mobile--First-059669?style=flat-square)](#)
+[![Deploy Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)](https://onplan-work.vercel.app)
+[![API Render](https://img.shields.io/badge/API-Render-46E3B7?style=flat-square&logo=render&logoColor=black)](https://onplan-work-api.onrender.com)
+
+<p align="center">
+  <b>Plataforma Full Stack e Mobile-First projetada para transformar a rotina diária em um fluxo contínuo de realizações, integrando reordenação drag & drop inteligente com métricas de desempenho e foco ágil em tempo real.</b>
+  <br><br>
+  🌐 <b>Aplicação Online:</b> <a href="https://onplan-work.vercel.app">https://onplan-work.vercel.app</a> &nbsp;|&nbsp; ⚡ <b>API Status:</b> <a href="https://onplan-work-api.onrender.com/health">onplan-work-api.onrender.com</a>
+</p>
+
+---
 
 Desenvolvido por **Oneris Grünewald**  
 - **GitHub:** [@onerisgf](https://github.com/onerisgf)  
